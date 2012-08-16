@@ -1,7 +1,15 @@
 name = Pushtape Front
+description = frontpage context
 core = 7.x
 package = Pushtape
 php = 5.2.4
-version = 7.x-1.0-alpha2
+version = 7.x-1.0-alpha3
 project = pushtape_front
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = delta_blocks
+dependencies[] = views
+features[context][] = frontpage
+features[ctools][] = context:context:3
 features[features_api][] = api:1
+project status url = http://apps.pushtape.com
