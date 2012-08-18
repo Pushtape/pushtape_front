@@ -20,6 +20,7 @@ function pushtape_front_context_default_contexts() {
     'path' => array(
       'values' => array(
         '<front>' => '<front>',
+        'front' => 'front',
       ),
     ),
   );
@@ -29,20 +30,32 @@ function pushtape_front_context_default_contexts() {
         'views-releases-block_1' => array(
           'module' => 'views',
           'delta' => 'releases-block_1',
-          'region' => 'postscript_first',
-          'weight' => '0',
+          'region' => 'sidebar_first',
+          'weight' => 0,
+        ),
+        'views-pushtape_news-block_1' => array(
+          'module' => 'views',
+          'delta' => 'pushtape_news-block_1',
+          'region' => 'content',
+          'weight' => 0,
+        ),
+        'views-pushtape_events-block_1' => array(
+          'module' => 'views',
+          'delta' => 'pushtape_events-block_1',
+          'region' => 'sidebar_second',
+          'weight' => 0,
         ),
         'delta_blocks-logo' => array(
           'module' => 'delta_blocks',
           'delta' => 'logo',
           'region' => 'postscript_second',
-          'weight' => '0',
+          'weight' => 0,
         ),
         'views-pushtape_player-block_1' => array(
           'module' => 'views',
           'delta' => 'pushtape_player-block_1',
           'region' => 'postscript_third',
-          'weight' => '0',
+          'weight' => 0,
         ),
       ),
     ),

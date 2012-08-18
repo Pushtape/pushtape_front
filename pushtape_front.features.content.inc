@@ -23,7 +23,7 @@ function pushtape_front_content_defaults() {
       'external' => '0',
       'has_children' => '0',
       'expanded' => '0',
-      'weight' => '0',
+      'weight' => '-19',
       'identifier' => 'main-menu:node-name/frontpage',
     ),
     'title' => 'Front',
