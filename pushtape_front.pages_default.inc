@@ -157,34 +157,25 @@ function pushtape_front_default_page_manager_pages() {
     $pane->pid = 'new-3';
     $pane->panel = 'footer';
     $pane->type = 'views_panes';
-    $pane->subtype = 'albums-panel_pane_1';
+    $pane->subtype = 'releases-panel_pane_2';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => NULL,
-      'widget_title' => 'discography',
+      'view_mode' => 'teaser',
+      'widget_title' => NULL,
       'items_per_page' => NULL,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-      'style' => 'basic',
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['footer'][0] = 'new-3';
-    $pane = new stdClass();
-    $pane->pid = 'new-4';
-    $pane->panel = 'header';
-    $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'uuid:2a4743c4-62c8-05a4-8dbe-4fb81c814854';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'view_mode' => 'full',
+      'exposed' => array(
+        'sort_by' => NULL,
+        'sort_order' => NULL,
+      ),
+      'use_pager' => NULL,
+      'pager_id' => NULL,
+      'offset' => NULL,
+      'link_to_view' => NULL,
+      'more_link' => NULL,
+      'path' => NULL,
+      'view_settings' => 'fields',
+      'header_type' => 'none',
     );
     $pane->cache = array();
     $pane->style = array();
@@ -192,8 +183,8 @@ function pushtape_front_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['header'][0] = 'new-4';
+    $display->content['new-3'] = $pane;
+    $display->panels['footer'][0] = 'new-3';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
