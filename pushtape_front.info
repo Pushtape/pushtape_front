@@ -11,6 +11,7 @@ dependencies[] = defaultcontent
 dependencies[] = delta_blocks
 dependencies[] = views
 dependencies[] = views_column_class
+dependencies[] = boxes
 features[image][] = worteteaser
 features[box][] = box-261ff775
 features[box][] = register_now

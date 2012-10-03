@@ -38,14 +38,14 @@ function wortepublish_feature_views_default_views() {
   $handler->display->display_options['style_options']['row_class_prefix'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Main Image */
-  $handler->display->display_options['fields']['field_op_main_image']['id'] = 'field_op_main_image';
-  $handler->display->display_options['fields']['field_op_main_image']['table'] = 'field_data_field_op_main_image';
-  $handler->display->display_options['fields']['field_op_main_image']['field'] = 'field_op_main_image';
-  $handler->display->display_options['fields']['field_op_main_image']['label'] = '';
-  $handler->display->display_options['fields']['field_op_main_image']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_op_main_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_op_main_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_op_main_image']['settings'] = array(
+  $handler->display->display_options['fields']['field_artwork']['id'] = 'field_artwork';
+  $handler->display->display_options['fields']['field_artwork']['table'] = 'field_data_field_artwork';
+  $handler->display->display_options['fields']['field_artwork']['field'] = 'field_artwork';
+  $handler->display->display_options['fields']['field_artwork']['label'] = '';
+  $handler->display->display_options['fields']['field_artwork']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_artwork']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_artwork']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_artwork']['settings'] = array(
     'image_style' => 'worteteaser',
     'image_link' => 'content',
   );
@@ -67,7 +67,7 @@ function wortepublish_feature_views_default_views() {
   $handler->display->display_options['fields']['nid']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['text'] = '<div class="imgteaser">
   <a href=\'/node/[nid]\'>
-    [field_op_main_image]
+    [field_artwork]
       <span class=\'meta\'>
         [created]
       </span>
@@ -118,7 +118,7 @@ function wortepublish_feature_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'openpublish_article' => 'openpublish_article',
+    'track' => 'track',
   );
 
   /* Display: Page */
