@@ -17,3 +17,10 @@ function pushtape_front_ctools_plugin_api() {
     return array("version" => "3");
   }
 }
+
+/**
+ * Implements hook_views_api().
+ */
+function pushtape_front_views_api() {
+  return array("version" => "3.0");
+}
