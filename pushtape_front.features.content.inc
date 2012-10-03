@@ -10,7 +10,7 @@
 function pushtape_front_content_defaults() {
   $content = array();
 
-  $content['frontpagecontent'] = (object) array(
+  $content['frontpage'] = (object) array(
     'exported_path' => 'front-content',
     'title' => 'Front content',
     'status' => '1',
