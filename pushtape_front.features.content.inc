@@ -10,33 +10,30 @@
 function pushtape_front_content_defaults() {
   $content = array();
 
-  $content['frontpage'] = (object) array(
-    'exported_path' => 'front',
-    'link' => array(
-      'menu_name' => 'main-menu',
-      'link_path' => 'node-name/frontpage',
-      'router_path' => 'node/%',
-      'link_title' => 'Front',
-      'options' => array(),
-      'module' => 'menu',
-      'hidden' => '0',
-      'external' => '0',
-      'has_children' => '0',
-      'expanded' => '0',
-      'weight' => '-19',
-      'identifier' => 'main-menu:node-name/frontpage',
-    ),
-    'title' => 'Front',
+  $content['frontpagecontent'] = (object) array(
+    'exported_path' => 'front-content',
+    'title' => 'Front content',
     'status' => '1',
-    'promote' => '0',
-    'sticky' => '0',
+    'promote' => '1',
+    'sticky' => '1',
     'type' => 'page',
     'language' => 'und',
     'created' => '1345308701',
     'comment' => '1',
     'translate' => '0',
     'machine_name' => 'frontpage',
-    'body' => array(),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'value' => 'Check this out. i stay here!',
+          'summary' => '',
+          'format' => 'filtered_html',
+          'safe_value' => '<p>Check this out. i stay here!</p>
+',
+          'safe_summary' => '',
+        ),
+      ),
+    ),
   );
 
 return $content;

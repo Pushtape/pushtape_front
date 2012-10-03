@@ -27,35 +27,41 @@ function pushtape_front_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'system-main' => array(
+          'module' => 'system',
+          'delta' => 'main',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'delta_blocks-branding' => array(
+          'module' => 'delta_blocks',
+          'delta' => 'branding',
+          'region' => 'branding',
+          'weight' => '-10',
+        ),
+        'system-main-menu' => array(
+          'module' => 'system',
+          'delta' => 'main-menu',
+          'region' => 'menu',
+          'weight' => '-10',
+        ),
         'views-releases-block_1' => array(
           'module' => 'views',
           'delta' => 'releases-block_1',
           'region' => 'sidebar_first',
-          'weight' => 0,
-        ),
-        'views-pushtape_news-block_1' => array(
-          'module' => 'views',
-          'delta' => 'pushtape_news-block_1',
-          'region' => 'content',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'views-pushtape_events-block_1' => array(
           'module' => 'views',
           'delta' => 'pushtape_events-block_1',
           'region' => 'sidebar_second',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'delta_blocks-logo' => array(
           'module' => 'delta_blocks',
           'delta' => 'logo',
           'region' => 'postscript_second',
-          'weight' => 0,
-        ),
-        'views-pushtape_player-block_1' => array(
-          'module' => 'views',
-          'delta' => 'pushtape_player-block_1',
-          'region' => 'postscript_third',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
     ),
