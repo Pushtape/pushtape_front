@@ -1,9 +1,6 @@
 core = 7.15
 api = 2
 
-projects[views_column_class][version] = 1.0-alpha1
-projects[views_column_class][subdir] = contrib
-
 projects[features][version] = 1.0
 projects[features][subdir] = contrib
 
