@@ -103,14 +103,25 @@ function pushtape_front_default_page_manager_pages() {
       'fields_override' => array(
         'field_featured_image' => 1,
         'title' => 1,
-        'created' => 1,
+        'created' => 0,
         'body' => 1,
-        'field_tags' => 0,
       ),
       'override_title' => 0,
       'override_title_text' => '',
-      'view_mode' => NULL,
-      'widget_title' => 'news',
+      'view_mode' => 'teaser',
+      'widget_title' => NULL,
+      'exposed' => array(
+        'sort_by' => NULL,
+        'sort_order' => NULL,
+      ),
+      'use_pager' => NULL,
+      'pager_id' => NULL,
+      'offset' => NULL,
+      'link_to_view' => NULL,
+      'more_link' => NULL,
+      'path' => NULL,
+      'view_settings' => 'fields',
+      'header_type' => 'none',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -139,8 +150,20 @@ function pushtape_front_default_page_manager_pages() {
         'field_event_city' => 1,
         'field_event_state' => 1,
       ),
-      'view_mode' => NULL,
-      'widget_title' => 'upcoming shows',
+      'view_mode' => 'teaser',
+      'widget_title' => NULL,
+      'exposed' => array(
+        'sort_by' => NULL,
+        'sort_order' => NULL,
+      ),
+      'use_pager' => NULL,
+      'pager_id' => NULL,
+      'offset' => NULL,
+      'link_to_view' => NULL,
+      'more_link' => NULL,
+      'path' => NULL,
+      'view_settings' => 'fields',
+      'header_type' => 'none',
     );
     $pane->cache = array();
     $pane->style = array(
