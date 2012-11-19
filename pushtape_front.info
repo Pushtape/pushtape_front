@@ -10,6 +10,7 @@ dependencies[] = ctools
 dependencies[] = features
 dependencies[] = follow
 dependencies[] = page_manager
+dependencies[] = panopoly_core
 dependencies[] = simplenews
 dependencies[] = twitter
 datestamp = 1352410551
