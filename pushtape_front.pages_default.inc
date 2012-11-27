@@ -32,7 +32,7 @@ function pushtape_front_default_page_manager_pages() {
     'settings' => NULL,
   );
   $page->menu = array(
-    'type' => 'none',
+    'type' => 'normal',
     'title' => 'Home',
     'name' => 'main-menu',
     'weight' => '-20',
