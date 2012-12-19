@@ -7,7 +7,6 @@ project = pushtape_front
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = page_manager
-dependencies[] = simplenews
 dependencies[] = views_slideshow
 features[ctools][] = page_manager:pages_default:1
 features[features_api][] = api:1
