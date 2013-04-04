@@ -6,6 +6,7 @@ version = 7.x-1.0-alpha3
 project = pushtape_front
 dependencies[] = ctools
 dependencies[] = features
+dependencies[] = flexslider
 dependencies[] = page_manager
 dependencies[] = views_slideshow
 apps[server] = http://apps.pushtape.openlearninglabs.org/app/query/pushtape
