@@ -85,6 +85,9 @@ function pushtape_front_default_page_manager_pages() {
       'footercolumn3' => NULL,
       'header' => NULL,
       'footer' => NULL,
+      'secondarycolumn1' => NULL,
+      'secondarycolumn2' => NULL,
+      'secondarycolumn3' => NULL,
     ),
   );
   $display->cache = array();
@@ -95,21 +98,13 @@ function pushtape_front_default_page_manager_pages() {
     $pane->pid = 'new-1';
     $pane->panel = 'column1';
     $pane->type = 'views_panes';
-    $pane->subtype = 'pushtape_news-news_listing';
+    $pane->subtype = 'releases-panel_pane_2';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'items_per_page' => '2',
-      'fields_override' => array(
-        'field_featured_image' => 1,
-        'title' => 1,
-        'created' => 0,
-        'body' => 1,
-      ),
-      'override_title' => 0,
-      'override_title_text' => '',
       'view_mode' => 'teaser',
       'widget_title' => NULL,
+      'items_per_page' => NULL,
       'exposed' => array(
         'sort_by' => NULL,
         'sort_order' => NULL,
@@ -126,7 +121,6 @@ function pushtape_front_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'basic',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -138,7 +132,7 @@ function pushtape_front_default_page_manager_pages() {
     $pane->pid = 'new-2';
     $pane->panel = 'column2';
     $pane->type = 'views_panes';
-    $pane->subtype = 'pushtape_events-panel_pane_3';
+    $pane->subtype = 'events-panel_pane_3';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -168,9 +162,11 @@ function pushtape_front_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'basic',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => 'events',
+      'css_class' => '',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -180,7 +176,7 @@ function pushtape_front_default_page_manager_pages() {
     $pane->pid = 'new-3';
     $pane->panel = 'column3';
     $pane->type = 'block';
-    $pane->subtype = 'follow-site';
+    $pane->subtype = 'simplenews-1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -188,8 +184,14 @@ function pushtape_front_default_page_manager_pages() {
       'override_title_text' => '',
     );
     $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
+    $pane->style = array(
+      'settings' => NULL,
+      'style' => 'default',
+    );
+    $pane->css = array(
+      'css_id' => 'newsletter',
+      'css_class' => '',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -199,11 +201,11 @@ function pushtape_front_default_page_manager_pages() {
     $pane->pid = 'new-4';
     $pane->panel = 'footer';
     $pane->type = 'views_panes';
-    $pane->subtype = 'releases-panel_pane_2';
+    $pane->subtype = 'releases-panel_pane_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
+      'view_mode' => 'featured',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -220,7 +222,9 @@ function pushtape_front_default_page_manager_pages() {
       'header_type' => 'none',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -229,9 +233,44 @@ function pushtape_front_default_page_manager_pages() {
     $display->panels['footer'][0] = 'new-4';
     $pane = new stdClass();
     $pane->pid = 'new-5';
-    $pane->panel = 'footer';
+    $pane->panel = 'header';
     $pane->type = 'views_panes';
-    $pane->subtype = 'galleries-panel_pane_1';
+    $pane->subtype = 'news-panel_pane_3';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'featured',
+      'widget_title' => NULL,
+      'items_per_page' => NULL,
+      'exposed' => array(
+        'sort_by' => NULL,
+        'sort_order' => NULL,
+      ),
+      'use_pager' => NULL,
+      'pager_id' => NULL,
+      'offset' => NULL,
+      'link_to_view' => NULL,
+      'more_link' => NULL,
+      'path' => NULL,
+      'view_settings' => 'fields',
+      'header_type' => 'none',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+      'style' => 'default',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-5'] = $pane;
+    $display->panels['header'][0] = 'new-5';
+    $pane = new stdClass();
+    $pane->pid = 'new-6';
+    $pane->panel = 'secondarycolumn1';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'photosets-panel_pane_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -252,13 +291,49 @@ function pushtape_front_default_page_manager_pages() {
       'header_type' => 'none',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['footer'][1] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['secondarycolumn1'][0] = 'new-6';
+    $pane = new stdClass();
+    $pane->pid = 'new-7';
+    $pane->panel = 'secondarycolumn2';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'video-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'teaser',
+      'widget_title' => NULL,
+      'items_per_page' => NULL,
+      'exposed' => array(
+        'sort_by' => NULL,
+        'sort_order' => NULL,
+      ),
+      'use_pager' => NULL,
+      'pager_id' => NULL,
+      'offset' => NULL,
+      'link_to_view' => NULL,
+      'more_link' => NULL,
+      'path' => NULL,
+      'view_settings' => 'fields',
+      'header_type' => 'none',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-7'] = $pane;
+    $display->panels['secondarycolumn2'][0] = 'new-7';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
