@@ -34,7 +34,7 @@ function pushtape_front_context_default_contexts() {
             'field' => 'field_basic_image_image',
           ),
           'node' => array(
-            'field' => 'field_artwork',
+            'field' => 'field_featured_image',
           ),
           'taxonomy_term' => array(
             'field' => 'field_featured_image',
@@ -49,8 +49,8 @@ function pushtape_front_context_default_contexts() {
       'image_style' => '',
       'element' => '',
       'element_other' => '',
-      'duration' => '5000',
-      'fade' => '0',
+      'duration' => '1000',
+      'fade' => '1000',
       'center_x' => 1,
       'center_y' => 1,
     ),
@@ -88,7 +88,7 @@ function pushtape_front_context_default_contexts() {
             'field' => 'field_basic_image_image',
           ),
           'node' => array(
-            'field' => 'field_artwork',
+            'field' => 'field_featured_image',
           ),
           'taxonomy_term' => array(
             'field' => 'field_featured_image',
@@ -103,8 +103,8 @@ function pushtape_front_context_default_contexts() {
       'image_style' => '',
       'element' => '',
       'element_other' => '',
-      'duration' => '5000',
-      'fade' => '0',
+      'duration' => '1000',
+      'fade' => '1000',
       'center_x' => 1,
       'center_y' => 1,
     ),
@@ -140,7 +140,7 @@ function pushtape_front_context_default_contexts() {
             'field' => 'field_basic_image_image',
           ),
           'node' => array(
-            'field' => 'field_artwork',
+            'field' => 'field_featured_image',
           ),
           'taxonomy_term' => array(
             'field' => 'field_featured_image',
@@ -155,8 +155,8 @@ function pushtape_front_context_default_contexts() {
       'image_style' => '',
       'element' => '',
       'element_other' => '',
-      'duration' => '5000',
-      'fade' => '0',
+      'duration' => '1000',
+      'fade' => '1000',
       'center_x' => 1,
       'center_y' => 1,
     ),
@@ -192,7 +192,7 @@ function pushtape_front_context_default_contexts() {
             'field' => 'field_basic_image_image',
           ),
           'node' => array(
-            'field' => 'field_artwork',
+            'field' => 'field_featured_image',
           ),
           'taxonomy_term' => array(
             'field' => 'field_featured_image',
@@ -207,8 +207,8 @@ function pushtape_front_context_default_contexts() {
       'image_style' => '',
       'element' => '',
       'element_other' => '',
-      'duration' => '5000',
-      'fade' => '0',
+      'duration' => '1000',
+      'fade' => '1000',
       'center_x' => 1,
       'center_y' => 1,
     ),
@@ -244,7 +244,7 @@ function pushtape_front_context_default_contexts() {
             'field' => 'field_basic_image_image',
           ),
           'node' => array(
-            'field' => 'field_artwork',
+            'field' => 'field_featured_image',
           ),
           'taxonomy_term' => array(
             'field' => 'field_featured_image',
@@ -259,8 +259,8 @@ function pushtape_front_context_default_contexts() {
       'image_style' => '',
       'element' => '',
       'element_other' => '',
-      'duration' => '5000',
-      'fade' => '0',
+      'duration' => '1000',
+      'fade' => '1000',
       'center_x' => 1,
       'center_y' => 1,
     ),
